@@ -3275,7 +3275,7 @@ header .navbar-expand .navbar-brand .featured .first {
 }
 
 .full-image[data-mask="70"] {
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .full-image[data-mask="60"] {
