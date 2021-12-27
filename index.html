@@ -52,7 +52,12 @@
         <!-- ==============================================
         Theme Settings
         =============================================== -->
-        <style>
+       
+       
+       
+       
+       
+       <style>
             :root {
                 --hero-bg-color: #080d10;
                 
@@ -67,6 +72,11 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+h7 {
+  font-size: .88em;
+}
+
         </style>
         
     </head>
@@ -143,12 +153,21 @@
 
                     <!-- Navbar Items -->
                     <ul class="navbar-nav items">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">HOME <i class="nav-link"></i></a> 
+                        <li class="nav-item dropdown">
+                            <a href="index.html" class="nav-link"> HOME <i class="icon-arrow-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="" class="nav-link">OUR SERVICES</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">WHO WE ARE</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
+                                <li class="nav-item"><a href="poolgallery.html" class="nav-link">POOL GALLERY</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">OUR RESULTS</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">OUR BUSINESS UNITS</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">GET IN TOUCH</a></li>
+                                
+                                
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">ABOUT<i class="icon-arrow-down"></i></a> 
-                        </li>
+                        
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link"> POOLS <i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
@@ -156,26 +175,8 @@
                                 <li class="nav-item"><a href="" class="nav-link">POOL STORY</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">DESIGN & LAYOUT</a></li>
-                                <li class="nav-item dropdown">
-                                    <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="" class="nav-link">RE-TILING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">POOL RESORVATION</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">EQIPMENT REPLACEMENT</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">EQIPMENT REPAIRS</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="" class="nav-link">UPKEEP<i class="icon-arrow-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="" class="nav-link">ALGAIE CLEANING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">VACCUMING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">BACKWASHING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">PH/CL TEST</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">CHEMICAL TRETMENT</a></li>
-                                    </ul>
-                                </li>
+                                
+                                
                                 
                             </ul>
                         </li>
@@ -189,6 +190,28 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
+                            <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="" class="nav-link">RE-TILING</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">POOL RESTORATION</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPLACEMENT</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPAIRS</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link">UPKEEP<i class="icon-arrow-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="" class="nav-link">ALGAIE CLEANING</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">VACCUMING</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">BACKWASHING</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">PH/CL TEST</a></li>
+                                        <li class="nav-item"><a href="" class="nav-link">CHEMICAL TRETMENT</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        
+                        <li class="nav-item dropdown">
                             <a href="" class="nav-link">BACKYARD<i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="" class="nav-link">SOFT/HARD LANDSCAPING</a></li>
@@ -197,10 +220,10 @@
                                 <li class="nav-item"><a href="" class="nav-link">GAZEBOS</a></li>
                             </ul>
                         </li>
-                        
+                       
                         
                     </ul>
-
+                    
                     <!-- Navbar Icons -->
                     <ul class="navbar-nav icons">
                         <li class="nav-item">
@@ -218,15 +241,8 @@
                             </a>
                         </li>
                     </ul>
-
-                    <!-- Navbar Action -->
-                    <ul class="navbar-nav action">
-                        <li class="nav-item ml-3">
-                            
-                                <a href="#contact" class="smooth-anchor btn ml-lg-auto primary-button">CONTACT</a>
-                           
-                        </li>
-                    </ul>
+                    <a href="#contact" class="smooth-anchor btn ml-lg-auto primary-button">CONTACT</a>
+                    
                     
                 </div>
             </nav>
@@ -250,10 +266,10 @@
 
                                     <!-- Content -->
                                     <h1 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">
-                                        <span class="pre-title m-0">Now stretch your wings you've a sky of water</span>
-                                        HIT THE <span class="featured"><span>POOL</span></span>
+                                        
+                                        Now stretch <span class="featured"><span>your wings</span></span>
                                     </h1>
-                                    <p data-aos="zoom-in" data-aos-delay="2400" class="description">Leading swimming pool company in Oman</p>
+                                    
 
                                     <!-- Action -->
                                     
@@ -273,18 +289,44 @@
 
                 <!-- Content -->
                 <h1 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">
-                    <span class="pre-title m-0">Now stretch your wings you've a sky of water</span>
-                    HIT THE <span class="featured"><span>POOL</span></span>
+                    
+                    you've a  <span class="featured"><span>sky of water</span></span>
+                   
                 </h1>
-                <p data-aos="zoom-in" data-aos-delay="2400" class="description">Leading swimming pool company in Oman</p>
-
+               
                 <!-- Action -->
                 
             </div>
         </div>
     </div>
 </div>
+            
+
+<!-- Item 3 -->
+<div class="swiper-slide slide-center">
+
+    <!-- Media -->
+    <img src="assets/images/unnamed-6.jpg" alt="Full Image" class="full-image" data-mask="70">
+
+    <div class="slide-content row">
+        <div class="col-12 d-flex justify-content-start inner">
+            <div class="left text-left">
+
+                <!-- Content -->
+                <h1 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">
+                   
+                    HIT THE <span class="featured"><span>POOL</span></span>
                     
+                </h1>
+               
+                <!-- Action -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -293,56 +335,9 @@
         <!-- About -->
 
 
-        <section id="about-3" class="section-3 highlights image-right featured">
-            <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 pr-md-5 align-self-center text-center text-md-left text">
-                    <div data-aos="fade-up"  class="row intro">
-                        <div class="col-12 p-0">
-                            <span class="pre-title m-auto m-md-0">We like what we do</span>
-                            <h2><span class="featured"><span>OUR</span></span> SERVICES</h2>
-                            <p>Alpha pools is involved in turnkey basis of design , construction, installation, commissioning, and maintenance of swimming pools, Jacuzzis, Sauna, Steam room, water features, fountains, soft and hard landscaping, Bazeboes/Pergolas</p>
-                        </div>
-                    </div>
-                    <div class="row items">                             
-                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
-                            <h4><i class="mr-2 fas fa-swimmer"></i>Swimming Pool</h4>
-                            <p>Design, construction, installation and commisioning.</p>
-                        </div>           
-                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
-                            <h4><i class="mr-2 fas fa-tools"></i>Pool maintenance</h4>
-                            <p>Refurbishment, retiling, upgrade , troubleshooting.</p>
-                        </div> 
-                    </div>
-                    <div class="row items"> 
-                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
-                            <h4><i class="mr-2 fas fa-swimming-pool"></i>Pool equipments</h4>
-                            <p>Filters, pumps, UW lights, heaters, chillers, disinfectant systems.</p>
-                        </div>  
-                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
-                            <h4><i class="mr-2 fas fa-water"></i>Water features</h4>
-                            <p>Noziles, fountains, waterfalls, rain-shower gardens.</p>
-                        </div>
-                    </div>
-                    <div class="row items"> 
-                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
-                            <h4><i class="mr-2 fas fa-spa"></i>Wellness</h4>
-                            <p>Jacuzzis & Spa, Sauna, steam room.</p>
-                        </div>  
-                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
-                            <h4><i class="mr-2 fas fa-home"></i>Backyard</h4>
-                            <p>Soft & hard landscaping, gazeboes, pergolas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 p-0 image">
-                    <img src="assets/images/unnamed-5.jpg" class="fit-image" alt="Fit Image">
-                </div>
-            </div>
-            </div>
-        </section>
+       
 
-        <section id="about" class="section-1 highlights team image-right">
+        <section id="about" class="section-3 highlights team image-right">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-8 align-self-top text">
@@ -354,8 +349,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12 p-0 pr-md-5">
-                                <p>We are a full Service swimming pool contractor; dedicated to making the pool of your dreams as realestic and affordable option. We do all th work from start to finish in timely and professional manner, so you can start enjoying your lexorious pool as soon as possible. <br>
-                                    From design to pool installation, we offer comprehensive pool building services. During the design phase we work closely with our clinds to ensure that the pool fits their decore and budget, and our expert design consultants will make sure you are getting a pool that reflects your project requirements or individual style.</p>
+                                <p>We are a full Service swimming pool contractor; dedicated to making the pool of your dreams as realistic and affordable option. We do all th work from start to finish in timely and professional manner, so you can start enjoying your luxurious pool as soon as possible. <br>
+                                    From design to pool installation, we offer comprehensive pool building services. During the design phase we work closely with our clinets to ensure that the pool fits their decore and budget, and our expert design consultants will make sure you are getting a pool that reflects your project requirements or individual style.</p>
                             </div>
                         </div>
                     </div>
@@ -373,20 +368,68 @@
                                     <a href="#"><i class="icon icon-eye"></i></a>
                                     <div class="list-group-content">
                                         <h4>Vision</h4>
-                                        <p>Build the best product withno environmental harm.</p>
+                                        <p>Build the best product with no environmental harm.</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-center align-items-center">
                                     <a href="#"><i class="icon icon-present"></i></a>
                                     <div class="list-group-content">
                                         <h4>Values</h4>
-                                        <p>Reliabile fast, quality, lexury.</p>
+                                        <p>Reliable, Fast, Quality, Luxury.</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="about-3" class="section-1 highlights image-right featured">
+            <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 pr-md-5 align-self-center text-center text-md-left text">
+                    <div data-aos="fade-up"  class="row intro">
+                        <div class="col-12 p-0">
+                            <span class="pre-title m-auto m-md-0">We like what we do</span>
+                            <h2><span class="featured"><span>OUR</span></span> SERVICES</h2>
+                            <p>Alpha pools is involved in turnkey basis of design , construction, installation, commissioning, and maintenance of swimming pools, Jacuzzis, Sauna, Steam room, water features, fountains, soft and hard landscaping, Bazeboes/Pergolas</p>
+                        </div>
+                    </div>
+                    <div class="row items">                             
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
+                            <h4><i class="mr-2 fas fa-swimmer"></i>Swimming Pool</h4>
+                            <p>Design, Construction, Installation and Commissioning.</p>
+                        </div>           
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
+                            <h4><i class="mr-2 fas fa-tools"></i>Pool maintenance</h4>
+                            <p>Refurbishment, Retiling, Upgrade , Troubleshooting.</p>
+                        </div> 
+                    </div>
+                    <div class="row items"> 
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
+                            <h4><i class="mr-2 fas fa-swimming-pool"></i>Pool equipments</h4>
+                            <p>Filters, Pumps, UW lights, Heaters, Chillers, Disinfectant systems.</p>
+                        </div>  
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
+                            <h4><i class="mr-2 fas fa-water"></i>Water features</h4>
+                            <p>Nozzles, Fountains, Waterfalls, Rain-shower gardens.</p>
+                        </div>
+                    </div>
+                    <div class="row items"> 
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 item">
+                            <h4><i class="mr-2 fas fa-spa"></i>Wellness</h4>
+                            <p>Jacuzzis & Spa, Sauna, Steam room.</p>
+                        </div>  
+                        <div data-aos="fade-up" class="col-12 col-md-6 p-0 pr-md-4 item">
+                            <h4><i class="mr-2 fas fa-home"></i>Backyard</h4>
+                            <p>Soft & Hard Landscaping, Gazeboes, Pergolas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0 image">
+                    <img src="assets/images/unnamed-16.jpg" class="fit-image" alt="Fit Image">
+                </div>
+            </div>
             </div>
         </section>
  <!-- Team -->
@@ -449,8 +492,12 @@
                             </div>  
                         </div>
                     </div>
+
+
                 </div>
+                <a href="" class="mt-2 btn outline-button" >LEARN MORE</a>
             </div>
+            
         </div>
     </div>
 </section>
@@ -460,7 +507,7 @@
 
        
 
-        
+
        
         
        <!-- Gallery -->
@@ -494,15 +541,12 @@
                         <img src="assets/images/unnamed-15.jpg" alt="Project" class="w-100">
                     </a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="20" class="buttons">
-                    <div class="d-sm-inline-flex">
-                        <a href="" class="smooth-anchor ml-sm-4 mt-4 btn outline-button">VIEW MORE</a>
-                    </div>
-                </div>
+                <a href="" class="mt-2 btn outline-button" >VIEW MORE</a>
             </div>
         </div>
     </section>
-<!--
+    
+    <!--
     <section id="about-2" class="section-2 odd highlights image-right counter funfacts featured">
         <div class="container">
         <div class="row">
@@ -554,7 +598,66 @@
             </div>
         </div>
         </div>
-    </section>-->
+    </section>
+    
+    <section id="team" class="section-4 odd team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 align-self-top text-center text-md-left text">
+                    <div class="row text-center intro">
+                        <div class="col-12">
+                            <span class="pre-title m-auto">Those Who Choose Us</span>
+                            <h2><span class="featured"><span>OUR</span></span> CLIENTS</h2>
+                        </div>
+                    </div>
+                   
+                
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <div class="customer-logos ">
+        <div class="swiper-container full-slider animation ">
+        <div class="swiper-wrapper ">
+    <div class="swiper-slide slide-center "><img src="assets/images/clents/58011490022725.jpg"><img src="">
+    <img src="assets/images/clents/Al-Turki.jpg">
+   <img src="assets/images/clents/almouj logo-small.jpg">
+    <img src="assets/images/clents/ASAAS.jpg">
+    <img src="assets/images/clents/city hotel duqm.png">
+   <img src="assets/images/clents/omran.jpg">
+    <img src="assets/images/clents/OSCO.jpg">
+    <img src="assets/images/clents/Renaissance_logo-01.jpg">
+    <img src="assets/images/clents/untitled-1_233.png"></div>
+    <div class="swiper-slide slide-center ">
+        <img src="assets/images/clents/Al-Turki.jpg">
+       <img src="assets/images/clents/almouj logo-small.jpg">
+        <img src="assets/images/clents/ASAAS.jpg">
+        <img src="assets/images/clents/city hotel duqm.png">
+       <img src="assets/images/clents/omran.jpg">
+        <img src="assets/images/clents/OSCO.jpg">
+        <img src="assets/images/clents/Renaissance_logo-01.jpg">
+        <img src="assets/images/clents/untitled-1_233.png">
+        <img src="assets/images/clents/58011490022725.jpg"></div>
+        <div class="swiper-slide slide-center ">
+            
+           <img src="assets/images/clents/almouj logo-small.jpg">
+            <img src="assets/images/clents/ASAAS.jpg">
+            <img src="assets/images/clents/city hotel duqm.png">
+           <img src="assets/images/clents/omran.jpg">
+            <img src="assets/images/clents/OSCO.jpg">
+            <img src="assets/images/clents/Renaissance_logo-01.jpg">
+            <img src="assets/images/clents/untitled-1_233.png">
+            <img src="assets/images/clents/58011490022725.jpg">
+            <img src="assets/images/clents/Al-Turki.jpg"></div>
+    
+   </div>
+        </div>
+  </div>      
+    
+-->
 
     <!-- Units -->
  <section id="units" class="section-5 highlights image-right">
@@ -577,20 +680,20 @@
                         <h4>Branch Office & Pool Factory</h4>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="tel: +96824452208" class="nav-link">
                                     <i class="fas fa-phone-alt mr-2"></i>
                                     
                                     +968 24452208
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="mailto: info@alphapoolsoman.com" class="nav-link">
                                     <i class="fas fa-envelope mr-2"></i>
-                                    <span class="__cf_email__" data-cfemail="325a575e5e5d72574a535f425e571c515d5f">info@alphapoolsoman.com</span>
+                                    <span class="__cf_email__" data-cfemail="325a575e5e5d72574a535f425e571c515d5f"><h7>info@alphapoolsoman.com</h7></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#map1" class="nav-link">
                                     <i class="fas fa-map-marker-alt mr-2"></i>
                                     Barka, Sanayya
                                 </a>
@@ -610,20 +713,20 @@
                         <h4>Sales & Corporate Office</h4>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="tel: +96897839855" class="nav-link">
                                     <i class="fas fa-phone-alt mr-2"></i>
                                     +968 97839855
                                     
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="mailto: sales@alphapoolsoman.com" class="nav-link">
                                     <i class="fas fa-envelope mr-2"></i>
-                                    <span class="__cf_email__" data-cfemail="f8909d949497b89d80999588949dd69b9795">sales@alphapoolsoman.com</span>
+                                    <span  class="__cf_email__" data-cfemail="f8909d949497b89d80999588949dd69b9795"><h7>sales@alphapoolsoman.com</h7></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#map" class="nav-link">
                                     <i class="fas fa-map-marker-alt mr-2"></i>
                                     Luxury 2 building, Al Nozha Street, Al mabellah
                                 </a>
@@ -703,31 +806,31 @@
                             <p>CPO,Sultanate of Oman</p>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="tel: +96897839855" class="nav-link">
                                         <i class="fas fa-phone-alt mr-2"></i>
                                         +968 97839855 
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="tel: +96824452208" class="nav-link">
                                         <i class="fas fa-phone-alt mr-2"></i>
                                         +968 24452208
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="mailto: info@alphapoolsoman.com" class="nav-link">
                                         <i class="fas fa-envelope mr-2"></i>
                                         <span class="__cf_email__" data-cfemail="f29a979e9e9db2978a939f829e97dc919d9f">info@alphapoolsoman.com</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="mailto: sales@alphapoolsoman.com" class="nav-link">
                                         <i class="fas fa-envelope mr-2"></i>
                                         <span class="__cf_email__" data-cfemail="f29a979e9e9db2978a939f829e97dc919d9f">sales@alphapoolsoman.com</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="#map" class="nav-link">
                                         <i class="fas fa-map-marker-alt mr-2"></i>
                                         Luxury 2 building, Al Nozha Street, Al mabellah
                                     </a>
@@ -807,84 +910,8 @@
             </div>
         </div>
 
-        <!-- Modal [sign] -->
-        <div id="sign" class="p-0 modal fade" role="dialog" aria-labelledby="sign" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        <i class="icon-close fas fa-arrow-right"></i>
-                    </div>
-                    <div class="modal-body">
-                        <form action="/" class="row">
-                            <div class="col-12 p-0 align-self-center">
-                                <div class="row">
-                                    <div class="col-12 p-0 pb-3">
-                                        <h2>Sign In</h2>
-                                        <p>Don't have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#register">Register now</a>.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="password" class="form-control" placeholder="Password" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group align-self-center">
-                                        <button class="btn primary-button">SIGN IN</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal [register] -->
-        <div id="register" class="p-0 modal fade" role="dialog" aria-labelledby="register" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        <i class="icon-close fas fa-arrow-right"></i>
-                    </div>
-                    <div class="modal-body">
-                        <form action="/" class="row">
-                            <div class="col-12 p-0 align-self-center">
-                                <div class="row">
-                                    <div class="col-12 p-0 pb-3">
-                                        <h2>Register</h2>
-                                        <p>Have an account? <a href="#" class="primary-color" data-toggle="modal" data-target="#sign">Sign In</a>.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="text" class="form-control" placeholder="Name" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="password" class="form-control" placeholder="Password" required>
-                                    </div>
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="password" class="form-control" placeholder="Confirm Password" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group align-self-center">
-                                        <button class="btn primary-button">REGISTER</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
+       
         <!-- Modal [map] -->
         <div id="map" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
             <div class="modal-dialog modal-dialog-slideout" role="document">
@@ -939,6 +966,46 @@
             </a>
         </div>        
       
+
+
+
+
+        <script>
+            var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36525';
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            var options = {
+          "enabled":true,
+          "chatButtonSetting":{
+              "backgroundColor":"#058283",
+              "ctaText":"",
+              "borderRadius":"40",
+              "marginLeft":"0",
+              "marginBottom":"80",
+              "marginRight":"80",
+              "position":"right"
+          },
+          "brandSetting":{
+              "brandName":"Alpha Pools",
+              "brandSubTitle":"Typically replies within a hour",
+              "brandImg":"assets/images/Alpha-Pools-Logo-final.png",
+              "welcomeText":"Hi there!\nHow can I help you?",
+              "messageText":"",
+              "backgroundColor":"#058283",
+              "ctaText":"Start Chat",
+              "borderRadius":"25",
+              "autoShow":false,
+              "phoneNumber":"+96897839855"
+          }
+          };
+            s.onload = function() {
+                CreateWhatsappChatWidget(options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          </script>
         <!-- ==============================================
         Google reCAPTCHA // Put your site key here
         =============================================== -->
