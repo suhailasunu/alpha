@@ -52,7 +52,7 @@
         <!-- ==============================================
         Theme Settings
         =============================================== -->
-       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        
        
        
@@ -70,8 +70,11 @@
             }
             img:hover {
   -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
+  transition: 1s ease;
 }
+
         </style>
         
     </head>
@@ -148,34 +151,36 @@
 
                     <!-- Navbar Items -->
                     <ul class="navbar-nav items">
-                        <li class="nav-item dropdown">
-                            <a href="index.html" class="nav-link"> HOME <i class="icon-arrow-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="" class="nav-link">OUR SERVICES</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">WHO WE ARE</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL GALLERY</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR RESULTS</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR BUSINESS UNITS</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">GET IN TOUCH</a></li>
-                                
-                                
-                            </ul>
-                        </li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
                         
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link"> POOLS <i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="" class="nav-link">BUILD YOUR POOL</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">POOL STORY</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
+                                <li class="nav-item"><a href="pooltypes.html" class="nav-link">POOL TYPES</a></li>
+                                <li class="nav-item"><a href="poolgallery.html" class="nav-link">POOL GALLERY</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">DESIGN & LAYOUT</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">UPKEEP</a></li>
                                 
                                 
                                 
                             </ul>
                         </li>
                         
+                        
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="" class="nav-link">RE-TILING/RENOVATION</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
+                                
+                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPLACEMENT/REPAIR</a></li>
+                                
+                                
+                            </ul>
+                            
+                        </li>
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link">WELLNESS<i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
@@ -184,28 +189,6 @@
                                 <li class="nav-item"><a href="" class="nav-link">STEAM ROOMS</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="" class="nav-link">RE-TILING</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL RESTORATION</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPLACEMENT</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPAIRS</a></li>
-                                <li class="nav-item dropdown">
-                                    <a href="" class="nav-link">UPKEEP<i class="icon-arrow-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="" class="nav-link">ALGAIE CLEANING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">VACCUMING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">BACKWASHING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">PH/CL TEST</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">CHEMICAL TRETMENT</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            
-                        </li>
-                        
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link">BACKYARD<i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
@@ -253,7 +236,7 @@
                 <div class="swiper-slide slide-center">
 
                     <!-- Media -->
-                    <img src="assets/images/home1.png" alt="Full Image" class="full-image" data-mask="80">
+                    <img src="assets/images/unnamed-14.jpg" alt="Full Image" class="full-image" data-mask="80">
 
                     <div class="slide-content row text-center">
                         <div class="col-12 mx-auto inner">
@@ -297,23 +280,60 @@
                     <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-15.jpg">
                         <img src="assets/images/unnamed-15.jpg" alt="Project" class="w-100">
                     </a>
-                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-9.jpg">
-                        <img src="assets/images/unnamed-9.jpg" alt="Project" class="w-100">
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-3.jpg">
+                        <img src="assets/images/unnamed-3.jpg" alt="Project" class="w-100">
                     </a>
-                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-14.jpg">
-                        <img src="assets/images/unnamed-14.jpg" alt="Project" class="w-100">
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-4.jpg">
+                        <img src="assets/images/unnamed-4.jpg" alt="Project" class="w-100">
                     </a>
-                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-19.jpg">
-                        <img src="assets/images/unnamed-19.jpg" alt="Project" class="w-100">
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-5.jpg">
+                        <img src="assets/images/unnamed-5.jpg" alt="Project" class="w-100">
                     </a>
-                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-2.jpg">
-                        <img src="assets/images/unnamed-2.jpg" alt="Project" class="w-100">
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-8.jpg">
+                        <img src="assets/images/unnamed-8.jpg" alt="Project" class="w-100">
                     </a>
-                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/IMG_8424.JPG">
-                        <img src="assets/images/IMG_8424.JPG" alt="Project" class="w-100">
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-10.jpg">
+                        <img src="assets/images/unnamed-10.jpg" alt="Project" class="w-100">
                     </a>
-                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-15.jpg">
-                        <img src="assets/images/unnamed-15.jpg" alt="Project" class="w-100">
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-13.jpg">
+                        <img src="assets/images/unnamed-13.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-17.jpg">
+                        <img src="assets/images/unnamed-17.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/unnamed-18.jpg">
+                        <img src="assets/images/unnamed-18.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g7.jpg">
+                        <img src="assets/images/g7.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g8.jpg">
+                        <img src="assets/images/g8.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g9.jpg">
+                        <img src="assets/images/g9.jpg" alt="Project" class="w-100">
+                    </a>
+                    
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g14.jpg">
+                        <img src="assets/images/g14.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g15.jpg">
+                        <img src="assets/images/g15.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g18.jpg">
+                        <img src="assets/images/g18.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g11.jpg">
+                        <img src="assets/images/g11.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/h1.jpg">
+                        <img src="assets/images/h1.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/h2.jpg">
+                        <img src="assets/images/h2.jpg" alt="Project" class="w-100">
+                    </a>
+                    <a class="col-12 col-md-6 col-lg-4 item" href="assets/images/g17.jpg">
+                        <img src="assets/images/g17.jpg" alt="Project" class="w-100">
                     </a>
                 </div>
                 
@@ -321,166 +341,311 @@
         </div>
     </section>
     
-  
-    
-        <!-- Footer -->
-        <footer>
-
-            
-            <!-- Copyright -->
-            <section id="copyright" class="p-3 odd copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-left">
-                            <p>Live with water</p>
-                          
-                        </div>
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                            <p>© Alpha Pools</a>.</p>
-                        </div>
+   <!-- Contact -->
+   <section id="contact" class="section-6 odd form contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 pr-md-5 align-self-center text">
+                <div class="row intro">
+                    <div class="col-12 p-0">
+                        <span class="pre-title m-0">Send a message</span>
+                        <h2>Get in <span class="featured"><span>Touch</span></span></h2>
+                        <p>We will respond to your message as soon as possible.</p>
                     </div>
                 </div>
-            </section>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <form action="" id="submit-form" class="nexgen-simple-form">
+                            
 
-
-        </footer>
-
-        <!-- Modal [search] -->
-        <div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        <i class="icon-close fas fa-arrow-right"></i>
-                    </div>
-                    <div class="modal-body">
-                        <form class="row">
-                            <div class="col-12 p-0 align-self-center">
-                                <div class="row">
-                                    <div class="col-12 p-0">
-                                        <h2>What are you looking for?</h2>
-                                        <div class="badges">
-                                            <span class="badge"><a href="#">Owe a pool</a></span>
-                                            <span class="badge"><a href="#">Pool maintenance</a></span>
-                                            <span class="badge"><a href="#">Pool eqipments</a></span>
-                                            <span class="badge"><a href="#">Jacuzzi/Spa</a></span>
-                                            <span class="badge"><a href="#">Sauna</a></span>
-                                            <span class="badge"><a href="#">Steam room</a></span>
-                                            <span class="badge"><a href="#">Landscaping</a></span>
-                                            <span class="badge"><a href="#">Pergolas & gazebos</a></span>
-                                            
-                                        </div>
-                                    </div>
+                            <div class="row form-group-margin">
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <input type="text" name="name" class="form-control field-name" placeholder="Name">
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="text" class="form-control" placeholder="Enter Keywords">
-                                    </div>
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <input type="email" name="email" class="form-control field-email" placeholder="Email">
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group align-self-center">
-                                        <button class="btn primary-button">SEARCH</button>
-                                    </div>
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <input type="text" name="phone" class="form-control field-phone" placeholder="Phone">
+                                </div>
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <i class="icon-arrow-down mr-3"></i>
+                                    <select name="info" class="form-control field-info">
+                                        <option value="" selected disabled>Select</option>
+                                        <option>Pool</option>
+                                        <option>Refurbishment</option>
+                                        <option>Upkeep</option>
+                                        <option>Wellness</option>
+                                        <option>Backyard</option>
+                                        <option>Water features</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 m-0 p-2 input-group">
+                                    <textarea name="message" class="form-control field-message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12 col-12 m-0 p-2 input-group">
+                                    <span class="form-alert"></span>
+                                </div>
+                                <div class="col-12 input-group m-0 p-2">
+                                   
+                                    <div ><button type="submit" title="Send Message" class="text-center btn primary-button">SEND</button></div>
                                 </div>
                             </div>
                         </form>
                     </div>
+                </div>                        
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="contacts">
+                    <h4>Alpha Marketing & Services LLC</h4>
+                    <p>PB No: 3417, PC 111  </p>
+                    <p>CPO,Sultanate of Oman</p>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="tel: +96897839855" class="nav-link">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                +968 97839855 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tel: +96824452208" class="nav-link">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                +968 24452208
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto: info@alphapoolsoman.com" class="nav-link">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <span class="__cf_email__" data-cfemail="f29a979e9e9db2978a939f829e97dc919d9f">info@alphapoolsoman.com</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto: sales@alphapoolsoman.com" class="nav-link">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <span class="__cf_email__" data-cfemail="f29a979e9e9db2978a939f829e97dc919d9f">sales@alphapoolsoman.com</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Luxury 2 building, Al Nozha Street, Al mabellah
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="mt-2 btn outline-button" data-toggle="modal" data-target="#map">VIEW MAP</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-        
-       
-       
-        <!-- Modal [responsive menu] -->
-        <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        <i class="icon-close fas fa-arrow-right"></i>
-                    </div>
-                    <div class="menu modal-body">
-                        <div class="row w-100">
-                            <div class="items p-0 col-12 text-center">
-                                <!-- Append [navbar] -->
+<!-- Footer -->
+<footer>
+
+    
+    <!-- Copyright -->
+    <section id="copyright" class="p-3 odd copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3 text-center text-lg-left">
+                    <p>Live with water</p>
+                  
+                </div>
+                <div class="col-12 col-md-6 p-3 text-center text-lg-right">
+                    <p>© Alpha Pools</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</footer>
+
+<!-- Modal [search] -->
+<div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="modal-body">
+                <form class="row">
+                    <div class="col-12 p-0 align-self-center">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <h2>What are you looking for?</h2>
+                                <div class="badges">
+                                    <span class="badge"><a href="#">Owe a pool</a></span>
+                                    <span class="badge"><a href="#">Pool maintenance</a></span>
+                                    <span class="badge"><a href="#">Pool eqipments</a></span>
+                                    <span class="badge"><a href="#">Jacuzzi/Spa</a></span>
+                                    <span class="badge"><a href="#">Sauna</a></span>
+                                    <span class="badge"><a href="#">Steam room</a></span>
+                                    <span class="badge"><a href="#">Landscaping</a></span>
+                                    <span class="badge"><a href="#">Pergolas & gazebos</a></span>
+                                    
+                                </div>
                             </div>
-                            <div class="contacts p-0 col-12 text-center">
-                                <!-- Append [navbar] -->
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 input-group">
+                                <input type="text" class="form-control" placeholder="Enter Keywords">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 input-group align-self-center">
+                                <button class="btn primary-button">SEARCH</button>
                             </div>
                         </div>
                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal [map] -->
+<div id="map" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header absolute" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="modal-body p-0">
+                <iframe src="https://maps.google.com/maps?q=PB%20No.%203417,%20PC%20111,%20CPO%20Office%20No.23,%202nd%20Floor%20Luxury-3%20Tower%20Near%20Mall%20of%20Muscat,%20Mabela%20Sulatanate%20of%20Oman%20OM,%20111&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="map1" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header absolute" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="modal-body p-0">
+                <iframe src="https://maps.google.com/maps?q=%20Barka,%20Sanayya&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal [responsive menu] -->
+<div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="menu modal-body">
+                <div class="row w-100">
+                    <div class="items p-0 col-12 text-center">
+                        <!-- Append [navbar] -->
+                    </div>
+                    <div class="contacts p-0 col-12 text-center">
+                        <!-- Append [navbar] -->
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <!-- Scroll [to top] -->
-        <div id="scroll-to-top" class="scroll-to-top">
-            <a href="#header" class="smooth-anchor">
-                <i class="fas fa-arrow-up"></i>
-            </a>
-        </div>        
-      
+<!-- Scroll [to top] -->
+<div id="scroll-to-top" class="scroll-to-top">
+    <a href="#header" class="smooth-anchor">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>        
 
 
 
 
-        <script>
-            var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36525';
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = url;
-            var options = {
-          "enabled":true,
-          "chatButtonSetting":{
-              "backgroundColor":"#058283",
-              "ctaText":"",
-              "borderRadius":"40",
-              "marginLeft":"0",
-              "marginBottom":"80",
-              "marginRight":"80",
-              "position":"right"
-          },
-          "brandSetting":{
-              "brandName":"Alpha Pools",
-              "brandSubTitle":"Typically replies within a hour",
-              "brandImg":"assets/images/Alpha-Pools-Logo-final.png",
-              "welcomeText":"Hi there!\nHow can I help you?",
-              "messageText":"",
-              "backgroundColor":"#058283",
-              "ctaText":"Start Chat",
-              "borderRadius":"25",
-              "autoShow":false,
-              "phoneNumber":"+96897839855"
-          }
-          };
-            s.onload = function() {
-                CreateWhatsappChatWidget(options);
-            };
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-          </script>
-        <!-- ==============================================
-        Google reCAPTCHA // Put your site key here
-        =============================================== -->
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
 
-        <!-- ==============================================
-        Vendor Scripts
-        =============================================== -->
-        <script src="assets/js/vendor/jquery.min.js"></script>
-        <script src="assets/js/vendor/jquery.easing.min.js"></script>
-        <script src="assets/js/vendor/jquery.inview.min.js"></script>
-        <script src="assets/js/vendor/popper.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/ponyfill.min.js"></script>
-        <script src="assets/js/vendor/slider.min.js"></script>
-        <script src="assets/js/vendor/animation.min.js"></script>
-        <script src="assets/js/vendor/progress-radial.min.js"></script>
-        <script src="assets/js/vendor/bricklayer.min.js"></script>
-        <script src="assets/js/vendor/gallery.min.js"></script>
-        <script src="assets/js/vendor/shuffle.min.js"></script>
-        <script src="assets/js/vendor/cookie-notice.min.js"></script>
-        <script src="assets/js/vendor/particles.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36525';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#058283",
+      "ctaText":"",
+      "borderRadius":"40",
+      "marginLeft":"0",
+      "marginBottom":"80",
+      "marginRight":"80",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Alpha Pools",
+      "brandSubTitle":"Typically replies within a hour",
+      "brandImg":"assets/images/Alpha-Pools-Logo-final.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"",
+      "backgroundColor":"#058283",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"+96897839855"
+  }
+  };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
+
+<script>
+$("#submit-form").submit((e)=>{
+e.preventDefault()
+$.ajax({
+    url:"https://script.google.com/macros/s/AKfycbxj6TIy2TfS-77kbGBNOWNaLn1ogMCeY19U1fN7zE3myetRr-qaDJgwBZxJGF0hcx-b/exec",
+    data:$("#submit-form").serialize(),
+    method:"post",
+    success:function (response){
+        alert("Form submitted successfully")
+        window.location.reload()
+        //window.location.href="https://google.com"
+    },
+    error:function (err){
+        alert("Something Error")
+
+    }
+})
+})
+</script>
+
+<!-- ==============================================
+Google reCAPTCHA // Put your site key here
+=============================================== -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
+
+<!-- ==============================================
+Vendor Scripts
+=============================================== -->
+<script src="assets/js/vendor/jquery.min.js"></script>
+<script src="assets/js/vendor/jquery.easing.min.js"></script>
+<script src="assets/js/vendor/jquery.inview.min.js"></script>
+<script src="assets/js/vendor/popper.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/ponyfill.min.js"></script>
+<script src="assets/js/vendor/slider.min.js"></script>
+<script src="assets/js/vendor/animation.min.js"></script>
+<script src="assets/js/vendor/progress-radial.min.js"></script>
+<script src="assets/js/vendor/bricklayer.min.js"></script>
+<script src="assets/js/vendor/gallery.min.js"></script>
+<script src="assets/js/vendor/shuffle.min.js"></script>
+<script src="assets/js/vendor/cookie-notice.min.js"></script>
+<script src="assets/js/vendor/particles.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>

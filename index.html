@@ -22,10 +22,10 @@
         <!-- ==============================================
         Favicons
         =============================================== -->
-        <link rel="shortcut icon" href="assets/images/Alpha-Pools-Logo-Final.png">
-        <link rel="apple-touch-icon" href="assets/images/Alpha-Pools-Logo-Final.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/Alpha-Pools-Logo-Final.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/Alpha-Pools-Logo-Final.png">
+        <link rel="shortcut icon" href="assets/images/fvcn.png">
+        <link rel="apple-touch-icon" href="assets/images/fvcn.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/fvcn.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/fvcn.png">
 
         <!-- ==============================================
         Vendor Stylesheet
@@ -52,7 +52,7 @@
         <!-- ==============================================
         Theme Settings
         =============================================== -->
-       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        
        
        
@@ -68,9 +68,14 @@
                 --section-5-bg-color: #ffffff;
                 --section-6-bg-color: #111117;
             }
+            .img{
+transition: 1s ease;
+}
             img:hover {
   -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
+  transition: 1s ease;
 }
 
 h7 {
@@ -142,7 +147,7 @@ h7 {
                     <!-- Navbar Brand-->
                     <a class="navbar-brand" href="/">
                         <span class="brand">
-                            <img src="assets/images/Alpha-Pools-Logo-Final.png" alt="" >
+                            <img src="assets/images/logo.jpg" alt="" >
                         </span>
                         
                         
@@ -153,34 +158,35 @@ h7 {
 
                     <!-- Navbar Items -->
                     <ul class="navbar-nav items">
-                        <li class="nav-item dropdown">
-                            <a href="index.html" class="nav-link"> HOME <i class="icon-arrow-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="" class="nav-link">WHO WE ARE</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR SERVICES</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL GALLERY</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR RESULTS</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR BUSINESS UNITS</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">GET IN TOUCH</a></li>
-                                
-                                
-                            </ul>
-                        </li>
-                        
+                        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li> 
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link"> POOLS <i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="" class="nav-link">BUILD YOUR POOL</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">POOL STORY</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
+                                <li class="nav-item"><a href="pooltypes.html" class="nav-link">POOL TYPES</a></li>
+                                <li class="nav-item"><a href="poolgallery.html" class="nav-link">POOL GALLERY</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">DESIGN & LAYOUT</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">UPKEEP</a></li>
                                 
                                 
                                 
                             </ul>
                         </li>
                         
+                       
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="" class="nav-link">RE-TILING/RENOVATION</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
+                                
+                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPLACEMENT/REPAIR</a></li>
+                                
+                                
+                            </ul>
+                            
+                        </li>
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link">WELLNESS<i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
@@ -188,27 +194,6 @@ h7 {
                                 <li class="nav-item"><a href="" class="nav-link">SAUNA ROOMS</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">STEAM ROOMS</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="" class="nav-link">RE-TILING</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL RESTORATION</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPLACEMENT</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPAIRS</a></li>
-                                <li class="nav-item dropdown">
-                                    <a href="" class="nav-link">UPKEEP<i class="icon-arrow-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="" class="nav-link">ALGAIE CLEANING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">VACCUMING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">BACKWASHING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">PH/CL TEST</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">CHEMICAL TRETMENT</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            
                         </li>
                         
                         <li class="nav-item dropdown">
@@ -267,7 +252,15 @@ h7 {
                                     <!-- Content -->
                                     <h1 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">
                                         
-                                        NOW STRETCH <span class="featured"><span>YOUR WINGS</span></span>
+                                        READY<span class="featured"><span></span></span>
+                                    </h1>
+                                    <h1 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">
+                                        
+                                        <span class="featured"><span>SET</span></span>
+                                    </h1>
+                                    <h1 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">
+                                        
+                                        <span class="featured"><span>SWIM</span></span>
                                     </h1>
                                     
 
@@ -384,7 +377,7 @@ h7 {
                 </div>
             </div>
         </section>
-        <section id="about-3" class="section-1 highlights image-right featured">
+        <section id="about-3" class="section-1 highlights featured">
             <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 pr-md-5 align-self-center text-center text-md-left text">
@@ -495,7 +488,7 @@ h7 {
 
 
                 </div>
-                <a href="" class="mt-2 btn outline-button" >LEARN MORE</a>
+                <a href="pooltypes.html" class="mt-2 btn outline-button" >LEARN MORE</a>
             </div>
             
         </div>
@@ -541,7 +534,7 @@ h7 {
                         <img src="assets/images/unnamed-15.jpg" alt="Project" class="w-100">
                     </a>
                 </div>
-                <a href="" class="mt-2 btn outline-button" >VIEW MORE</a>
+                <a href="poolgallery.html" class="mt-2 btn outline-button" >VIEW MORE</a>
             </div>
         </div>
     </section>
@@ -618,92 +611,146 @@ h7 {
             </div>
             
         </div>
-        <div class="swiper-container full-slider animation ">
+       
+        <div class="swiper-container full-slider animation" id="content-desktop">
             <div class="swiper-wrapper ">
         <div class="swiper-slide slide-center ">
             <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
         <img src="assets/images/clnts/Al-Turki-removebg-preview.png">
        <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
-       
-        
-        </div>
-    
-        <div class="swiper-slide slide-center ">
-            <img src="assets/images/clnts/ASAAS-removebg-preview.png">
+       <img src="assets/images/clnts/ASAAS-removebg-preview.png">
             <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
            <img src="assets/images/clnts/omran-removebg-preview.png">
-            
-        
+          
         </div>
         
             <div class="swiper-slide slide-center ">
                 <img src="assets/images/clnts/Al-Turki-removebg-preview.png">
-       <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
-        <img src="assets/images/clnts/ASAAS-removebg-preview.png">
-        
+                <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
+                <img src="assets/images/clnts/ASAAS-removebg-preview.png">
+                     <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
+                    <img src="assets/images/clnts/omran-removebg-preview.png">
+                    <img src="assets/images/clnts/OSCO-removebg-preview.png">
+                 
         </div>
     
        
     
     <div class="swiper-slide slide-center ">
-        <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
-       <img src="assets/images/clnts/omran-removebg-preview.png">
-        <img src="assets/images/clnts/OSCO-removebg-preview.png">
-       
-        
+        <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
+                <img src="assets/images/clnts/ASAAS-removebg-preview.png">
+                     <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
+                    <img src="assets/images/clnts/omran-removebg-preview.png">
+                    <img src="assets/images/clnts/OSCO-removebg-preview.png">
+                 <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
+                 
        </div>
     
         <div class="swiper-slide slide-center ">
-            <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
-        <img src="assets/images/clnts/ASAAS-removebg-preview.png">
-        <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
+            <img src="assets/images/clnts/ASAAS-removebg-preview.png">
+                     <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
+                    <img src="assets/images/clnts/omran-removebg-preview.png">
+                    <img src="assets/images/clnts/OSCO-removebg-preview.png">
+                 <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
+                 <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
        
-            
             </div>
     
             <div class="swiper-slide slide-center ">
-                <img src="assets/images/clnts/omran-removebg-preview.png">
-        <img src="assets/images/clnts/OSCO-removebg-preview.png">
-        <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
-        
-        
-                
+               
+                <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
+                    <img src="assets/images/clnts/omran-removebg-preview.png">
+                    <img src="assets/images/clnts/OSCO-removebg-preview.png">
+                 <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
+                 <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
+                 <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
+                 
                 </div>
     
                 <div class="swiper-slide slide-center ">
-                    <img src="assets/images/clnts/ASAAS-removebg-preview.png">
-        <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
-        <img src="assets/images/clnts/omran-removebg-preview.png">
-        
-                    
+                    <img src="assets/images/clnts/omran-removebg-preview.png">
+                    <img src="assets/images/clnts/OSCO-removebg-preview.png">
+                 <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
+                 <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
+                 <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
+                 <img src="assets/images/clnts/Al-Turki-removebg-preview.png">
+                
                     </div>
     
                     <div class="swiper-slide slide-center ">
                         <img src="assets/images/clnts/OSCO-removebg-preview.png">
-        <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
-        <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
-            
-                        
+                        <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
+                        <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
+                        <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
+                        <img src="assets/images/clnts/Al-Turki-removebg-preview.png">
+                       <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
+                       
                         </div>
     
                         <div class="swiper-slide slide-center ">
-                            <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
-            <img src="assets/images/clnts/omran-removebg-preview.png">
-            <img src="assets/images/clnts/OSCO-removebg-preview.png">
-            
+                            <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
+                        <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
+                        <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
+                        <img src="assets/images/clnts/Al-Turki-removebg-preview.png">
+                       <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
+                       <img src="assets/images/clnts/ASAAS-removebg-preview.png">
+                          
                             </div>
+                            <div class="swiper-slide slide-center ">
+                               
+                            <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
+                            <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
+                            <img src="assets/images/clnts/Al-Turki-removebg-preview.png">
+                           <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
+                           <img src="assets/images/clnts/ASAAS-removebg-preview.png">
+                           <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png"> 
+                                </div>
             
         
        </div>
             </div>
+
+            <div class="swiper-container full-slider animation" id="content-mobile">
+                <div class="swiper-wrapper ">
+            <div class="swiper-slide slide-center ">
+                <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
+            <img src="assets/images/clnts/Al-Turki-removebg-preview.png">
+           
+            </div>
+        
+            <div class="swiper-slide slide-center ">
+                <img src="assets/images/clnts/almouj_logo-small-removebg-preview.png">
+                <img src="assets/images/clnts/ASAAS-removebg-preview.png">
+               
+            </div>
+            
+                <div class="swiper-slide slide-center ">
+                    <img src="assets/images/clnts/city_hotel_duqm-removebg-preview.png">
+           <img src="assets/images/clnts/omran-removebg-preview.png">
+            
+            </div>
+        
+           
+        
+        <div class="swiper-slide slide-center ">
+            <img src="assets/images/clnts/OSCO-removebg-preview.png">
+            <img src="assets/images/clnts/Renaissance_logo-01-removebg-preview.png">
+           
+            
+           </div>
+        
+            <div class="swiper-slide slide-center ">
+                <img src="assets/images/clnts/untitled-1_233-removebg-preview.png">
+                 <img src="assets/images/clnts/58011490022725-removebg-preview.png ">
+           
+                
+                </div>
+        
+                
+           </div>
+                </div>
     </section>
-    
    
-       
-     
-    
-
-
     <!-- Units -->
  <section id="units" class="section-5 highlights image-right">
     <div class="container">
@@ -801,11 +848,8 @@ h7 {
                         </div>
                         <div class="row">
                             <div class="col-12 p-0">
-                                <form action="php/form.php" id="nexgen-simple-form" class="nexgen-simple-form">
-                                    <input type="hidden" name="section" value="nexgen_form">
-
-                                    <input type="hidden" name="reCAPTCHA">
-                                    <!-- Remove this field if you want to disable recaptcha -->
+                                <form action="" id="submit-form" class="nexgen-simple-form">
+                                    
 
                                     <div class="row form-group-margin">
                                         <div class="col-12 col-md-6 m-0 p-2 input-group">
@@ -837,7 +881,8 @@ h7 {
                                             <span class="form-alert"></span>
                                         </div>
                                         <div class="col-12 input-group m-0 p-2">
-                                            <a class="btn primary-button">SEND</a>
+                                           
+                                            <div ><button type="submit" title="Send Message" class="text-center btn primary-button">SEND</button></div>
                                         </div>
                                     </div>
                                 </form>
@@ -1051,6 +1096,27 @@ h7 {
             var x = document.getElementsByTagName('script')[0];
             x.parentNode.insertBefore(s, x);
           </script>
+
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxj6TIy2TfS-77kbGBNOWNaLn1ogMCeY19U1fN7zE3myetRr-qaDJgwBZxJGF0hcx-b/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+
         <!-- ==============================================
         Google reCAPTCHA // Put your site key here
         =============================================== -->

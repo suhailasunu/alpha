@@ -292,7 +292,7 @@ jQuery(function ($) {
     var fullSlider = new Swiper('.full-slider', {
 
         autoplay: {
-            delay: 1500,
+            delay: 3000,
         },
         parallax: true,
         slidesPerView: 1,
