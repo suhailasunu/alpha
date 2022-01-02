@@ -52,10 +52,12 @@
         <!-- ==============================================
         Theme Settings
         =============================================== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        
        
        
-       
+        
+        
        
        <style>
             :root {
@@ -68,9 +70,14 @@
                 --section-5-bg-color: #ffffff;
                 --section-6-bg-color: #111117;
             }
+            .img{
+transition: 1s ease;
+}
             img:hover {
   -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
+  transition: 1s ease;
 }
         </style>
         
@@ -148,34 +155,39 @@
 
                     <!-- Navbar Items -->
                     <ul class="navbar-nav items">
-                        <li class="nav-item dropdown">
-                            <a href="index.html" class="nav-link"> HOME <i class="icon-arrow-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="" class="nav-link">WHO WE ARE</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR SERVICES</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL GALLERY</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR RESULTS</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">OUR BUSINESS UNITS</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">GET IN TOUCH</a></li>
-                                
-                                
-                            </ul>
+                        <li class="nav-item ">
+                            <a href="index.html" class="nav-link"> HOME</a>
+                           
                         </li>
                         
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link"> POOLS <i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="" class="nav-link">BUILD YOUR POOL</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL STORY</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL TYPES</a></li>
+                                <li class="nav-item"><a href="poolstory.html" class="nav-link">POOL STORY</a></li>
+                                <li class="nav-item"><a href="pooltypes.html" class="nav-link">POOL TYPES</a></li>
+                                <li class="nav-item"><a href="poolgallery.html" class="nav-link">POOL GALLERY</a></li>
                                 <li class="nav-item"><a href="" class="nav-link">DESIGN & LAYOUT</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">UPKEEP</a></li>
                                 
                                 
                                 
                             </ul>
                         </li>
                         
+                       
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="" class="nav-link">RE-TILING/RENOVATION</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
+                                
+                                <li class="nav-item"><a href="" class="nav-link">EQUIPMENT REPLACEMENT/REPAIR</a></li>
+                                
+                                
+                            </ul>
+                            
+                        </li>
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link">WELLNESS<i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
@@ -184,28 +196,6 @@
                                 <li class="nav-item"><a href="" class="nav-link">STEAM ROOMS</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link">REFURBISHMENT<i class="icon-arrow-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="" class="nav-link">RE-TILING</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL UPGRADATION</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">POOL RESORVATION</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">EQIPMENT REPLACEMENT</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">EQIPMENT REPAIRS</a></li>
-                                <li class="nav-item dropdown">
-                                    <a href="" class="nav-link">UPKEEP<i class="icon-arrow-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="" class="nav-link">ALGAIE CLEANING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">VACCUMING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">BACKWASHING</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">PH/CL TEST</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">CHEMICAL TRETMENT</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            
-                        </li>
-                        
                         <li class="nav-item dropdown">
                             <a href="" class="nav-link">BACKYARD<i class="icon-arrow-down"></i></a>
                             <ul class="dropdown-menu">
@@ -260,7 +250,7 @@
 
                             <!-- Content -->
                             
-                            <h1 class="mb-0 title effect-static-text">Pool STORY</h1>
+                            <h1 class="mb-0 title effect-static-text">POOL STORY</h1>
                         </div>
                     </div>
                 </div>
@@ -268,190 +258,730 @@
             </div>
         </div>
     </section> 
-    
-   
-    <section id="about" class="section-1 highlights team image-right">
+    <section id="about" class="section-1 highlights team ">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8 align-self-top text">
                     <div class="row intro m-0">
                         <div class="col-12 p-0">
-                            <span class="pre-title m-0">A Success Story</span>
-                            <h2><span class="featured"><span>POOL</span></span> STORY</h2>
+                            
+                            <h2><span class="featured"><span>Pre-Fabricated </span></span>SWIMMING POOLS</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 p-0 pr-md-5">
-                            <p><br>
-                                </p>
+                            <p>Traditionally, permanent pools were built from reinforced concrete, and tiled on site with comparatively high expenses, work complexities and thus require more time for the completion on this approach. The quality of the pool and probability of leakage is strictly with subject to the level of water proofing and supervision.
+                                Pre-Fabricated pools were designed and built with premium quality standards to enhance the lifestyle by saving more time, totally leak proof, cost-effective, avoiding complexities, and increase the value of property.<br>
+                                Alternatives such as GRP Pools provide a quick and easy approach to this context. The GRP pools are manufactured in our factory premises along with proper pipe fittings and provisions for further filtration systems and pool lighting. The pool is hand tiled with premium quality Ceramic Mosaic/Glass Mosaic tiles and Epoxy Glue for the fixing, ensuring premium quality standards. 
+                                Each GRP Pool is permanent of exceptional quality, 100% leak proof and long lasting as the pool shell never undergoes any sort of property changes as at is inert and does not react with water. We have a wide range of custom made swimming pools for our clients to choose from the gallery, depending on their requirements and lifestyle.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 p-0 image">
-                    <img src="assets/images/acrylic.png" class="fit-image" alt="Fit Image">
+                    <img src="assets/images/unnamed-3.jpg" class="fit-image" alt="Fit Image">
                 </div>
             </div>
         </div>
     </section>
-   
-    <!-- Footer -->
-        <footer>
-
-            
-            <!-- Copyright -->
-            <section id="copyright" class="p-3 odd copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-left">
-                            <p>Live with water</p>
-                          
+    <section id="about" class="section-1 highlights team ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 align-self-top text">
+                    <div class="row intro m-0">
+                        <div class="col-12 p-0">
+                            
+                            <h3><span class="featured"><span>Glass Reinforced Plastic</span></span>(GRP)</h3>
                         </div>
-                        <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                            <p>© Alpha Pools</a>.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-0 pr-md-5">
+                            <p>Glass Reinforced Plasstic (GRP), otherwise known as Fibre Reinforced Polymer (FRP), offers many advantages over metalic and concrete alternatives, especially when compared with steel equivalents. 
+                                Benefits such as resistance to corrosion and chemicals, high tensile strength and non-conductive properties, combine to deliver a highly cost effective, durable and sustainable product.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </section>
-
-
-        </footer>
-
-        <!-- Modal [search] -->
-        <div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        <i class="icon-close fas fa-arrow-right"></i>
+                <div class="col-12 col-lg-12 align-self-top text">
+                    <div class="row intro m-0">
+                        <div class="col-12 p-0">
+                            
+                            <h3><span class="featured"><span>Manufacturing Method</span></span></h3>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <form class="row">
-                            <div class="col-12 p-0 align-self-center">
-                                <div class="row">
-                                    <div class="col-12 p-0">
-                                        <h2>What are you looking for?</h2>
-                                        <div class="badges">
-                                            <span class="badge"><a href="#">Owe a pool</a></span>
-                                            <span class="badge"><a href="#">Pool maintenance</a></span>
-                                            <span class="badge"><a href="#">Pool eqipments</a></span>
-                                            <span class="badge"><a href="#">Jacuzzi/Spa</a></span>
-                                            <span class="badge"><a href="#">Sauna</a></span>
-                                            <span class="badge"><a href="#">Steam room</a></span>
-                                            <span class="badge"><a href="#">Landscaping</a></span>
-                                            <span class="badge"><a href="#">Pergolas & gazebos</a></span>
-                                            
-                                        </div>
-                                    </div>
+                    <div class="row">
+                        <div class="col-12 p-0 pr-md-5">
+                            <p>Chopped strand mat or CSM is a form of reinforcement used in fiberglass. It consists of glass fibre laid randomly across each other and held together by a binder. It is typically processed using the hand lay-up technique, where sheets of material are placed on a mould and and brushed with resin.
+                                Because the binder dissolves in resin, the material easily conforms to different shapes when wetted out. After the resin cures, the hardened product can be taken from the mould and finished. Using chopped strand mat gives a fiberglass with isotropic in-plane material properties. The Hardened GRP shell hence tiled with Ceramic mosaic/Glass mosaic tiles using Epoxy Glue and Epoxy Grout to keep the elegant finish for our product.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-12 col-lg-6 p-4 image">
+                        <img src="assets/images/g7.JPG" class="fit-image" alt="Fit Image">
+                    </div>
+                    <div class="col-12 col-lg-6 p-4 image">
+                        <img src="assets/images/g8.JPG" class="fit-image" alt="Fit Image">
+                    </div>
+                    <div class="col-12 col-lg-6 p-4 image">
+                        <img src="assets/images/g14.JPG" class="fit-image" alt="Fit Image">
+                    </div>
+                    <div class="col-12 col-lg-6 p-4 image">
+                        <img src="assets/images/g20.JPG" class="fit-image" alt="Fit Image">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section-1 highlights team ">
+        <div class="container">
+            <div class="row">
+                <table style="width:100%">
+                    <tr>
+                      <th><h3>Fiberglass Pool Advantages</h3></th>
+                      <th><h3>Concrete Pool Disadvantages</h3></th>
+                      
+                    </tr>
+                    <tr>
+                      <th>Speed of Installation</th>
+                      <th>Slow Installation Time</th>
+                    </tr>
+                    <tr>
+                      <td>Because the fibreglass pool shell is manufactured off site, the installation of the shell typically occurs in about two days. Compare  these two days with three to six months of time for a concrete pool, and we're talking about a huge difference in the duration of time your site is in disarray, and often the difference between swimming this year and waiting until next summer.</td>
+                      <td>In contrast to fiberglass and even vinyl liner pools which can be completed in several weeks, it's not uncommon for concrete pools to take three to six months or longer to finish. Construction takes a toll not only on the backyard, but on the family as well.</td>
+                      
+                    </tr>
+                    <tr>
+                        <th>Low maintenance</th>
+                        <th>More Hands-on Maintenance</th>
+                    </tr>
+                    <tr>
+                        <td>Why are fiberglass pools so easy to maintain? It all has to do with surface porosity. In addition, chemical usage in concrete pools is much higher because of the need to penetrate the pool surface to kill algae. Concrete pools also require daily doses of muriatic acid to lower the pH of the water. This is because concrete is alkaline based and constantly increases the pH of pool water. Fiberglass swimming pool owners typically spend 75% less time and money maintaining their pools. This means anyone who owns a fiberglass pool will spend more time in the pool and less time maintaining it.</td>
+                        <td>By its very nature, concrete is extremely porous. This gives algae a place to call home. Once embedded into the surface of a concrete pool, algae are extremely tough to remove. In fact, concrete pool builders recommend brushing the entire surface of the pool with a steel brush at least once a week to remove any algae that are on the surface.</td>
+                    </tr>
+                    <tr>
+                        <th>Durability</th>
+                        <th>More Chemical Usage</th>
+                    </tr>
+                    <tr>
+                        <td>Because fibreglass swimming pools have no liner, there's no need to concerned about damaging the pool during daily use. </td>
+                        <td>Water chemistry is another issue with concrete pools. Because the algae embed into the surface, more chemicals are requred to each and destroy it. This requires more time and money to maintain the pool. Also, concrete is alkline-based which constantly increases the pH of the pool water, requiring the regular addition of acid to keep it in balance.</td>
+                    </tr>
+                    <tr>
+                        <th>Attractive Look</th>
+                        <th>Incompatible with Salt</th>
+                    </tr>
+                    <tr>
+                        <td>Over the past 30 years, fibreglass pools have transformed from the typical white bathtub you'd find at a rental beach house, to the elegant swimming pool designs and aesthetic features that are now as much works of art as the pool. This is due to advancements in the industry such as beautiful coloured finishes, ceramic tile/ tanning ledges, water features, stunning pool lights, elevated spas, poolside walls, etc. This is one of the many resons why fiberglass pools have gained exponential market share over the past decade.</td>
+                        <td>As mentioned earlier, salt and concrete don't mix. The dissolved salt in the pool water will shorten the life expectancy of the interior finish of a concrete pool. Thus it requires more frequent refinishing.</td>
+                    </tr>
+                    <tr>
+                        <th>Compatibility with Salt Systems</th>
+                        <th>High Cost of Ownership</th>
+                    </tr>
+                    <tr>
+                        <td>Salt chlorinators have proven to be a low maintenance, high water quality option for pool owners. However, if you have ever seen what de-icing salt does to the surface of a concrete pool. In our opinion, this makes the combination of salt systems and concrete pools unfavourable.</td>
+                        <td>The concrete pools cost exponentially more money to own. Acid washing by professionals every three to five years, more money in chemicals, more money spent on electricity, and refinishing/remodelling all add up to tens of thousands of dollars more over the years.</td>
+                    </tr>
+                    <tr>
+                        <th>Resale Value</th>
+                        <th>Rough Interior Surface</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>If a pool comes with the property, home buyers want something that looks good, needs little maintenance, and will last a long time. Vinyl liner pools need a new liner every 3-6 years, and ofteh abuyer will require the current owners to replace those themselves. Vinyl liner and aboveground pools don't look great,either, and can detract value. By contrast, a fibreglass pool adds to the value of your home. Low maintenance, beauty and durability are a win-win for both parties.</td>
+                        <td>The rough interior of a concrete pool does harbour algae growth, but that's not all. It can take a toll on tender feet as well. In fact, most kids who play in concrete pools on a regular basis have to wear water shoes to protect their feet from becoming sore and blistered.</td>
+                    </tr>
+                    
+                  </table>
+            
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section-1 highlights team ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 align-self-top text">
+                    <div class="row intro m-0">
+                        <div class="col-12 p-0">
+                            
+                            <h2><span class="featured"><span>Modern Fibre Glass Pool VS</span></span>Conventional Concrete Pool</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-0 pr-md-5">
+                           
+                        </div>
+                    </div>
+                </div>
+                <table style="width:100%">
+                    <tr>
+                        <th><h4>DESIRED QUALITIES OF<br>INGROUND POOLS</h4></th>
+                        <th><h4> G R P </h4></th>
+                        <th><h4>LINER</h4></th>
+                        <th><h4>CONCRETE</h4></th>
+                    </tr>
+                    <tr>
+                        <th>Low Maintenance</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Water Leakage Proof</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Speed of Installation</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Low Chemical Usage</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Smoothness of Finish</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Durability</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Energy Efficiency</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Attractive and Elegant look</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Beauty of Interior Finish</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Factory Controlled Quality</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Number of Available Features</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Compatibility with Salt Water Systems</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Low Initial Cost</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Customizable Shape and Size</th>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+  <!-- Contact -->
+  <section id="contact" class="section-6 odd form contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 pr-md-5 align-self-center text">
+                <div class="row intro">
+                    <div class="col-12 p-0">
+                        <span class="pre-title m-0">Send a message</span>
+                        <h2>Get in <span class="featured"><span>Touch</span></span></h2>
+                        <p>We will respond to your message as soon as possible.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <form action="" id="submit-form" class="nexgen-simple-form">
+                            
+
+                            <div class="row form-group-margin">
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <input type="text" name="name" class="form-control field-name" placeholder="Name">
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group">
-                                        <input type="text" class="form-control" placeholder="Enter Keywords">
-                                    </div>
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <input type="email" name="email" class="form-control field-email" placeholder="Email">
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 p-0 input-group align-self-center">
-                                        <button class="btn primary-button">SEARCH</button>
-                                    </div>
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <input type="text" name="phone" class="form-control field-phone" placeholder="Phone">
+                                </div>
+                                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                                    <i class="icon-arrow-down mr-3"></i>
+                                    <select name="info" class="form-control field-info">
+                                        <option value="" selected disabled>Select</option>
+                                        <option>Pool</option>
+                                        <option>Refurbishment</option>
+                                        <option>Upkeep</option>
+                                        <option>Wellness</option>
+                                        <option>Backyard</option>
+                                        <option>Water features</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 m-0 p-2 input-group">
+                                    <textarea name="message" class="form-control field-message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12 col-12 m-0 p-2 input-group">
+                                    <span class="form-alert"></span>
+                                </div>
+                                <div class="col-12 input-group m-0 p-2">
+                                   
+                                    <div ><button type="submit" title="Send Message" class="text-center btn primary-button">SEND</button></div>
                                 </div>
                             </div>
                         </form>
                     </div>
+                </div>                        
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="contacts">
+                    <h4>Alpha Marketing & Services LLC</h4>
+                    <p>PB No: 3417, PC 111  </p>
+                    <p>CPO,Sultanate of Oman</p>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="tel: +96897839855" class="nav-link">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                +968 97839855 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tel: +96824452208" class="nav-link">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                +968 24452208
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto: info@alphapoolsoman.com" class="nav-link">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <span class="__cf_email__" data-cfemail="f29a979e9e9db2978a939f829e97dc919d9f">info@alphapoolsoman.com</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mailto: sales@alphapoolsoman.com" class="nav-link">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <span class="__cf_email__" data-cfemail="f29a979e9e9db2978a939f829e97dc919d9f">sales@alphapoolsoman.com</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Luxury 2 building, Al Nozha Street, Al mabellah
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="mt-2 btn outline-button" data-toggle="modal" data-target="#map">VIEW MAP</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-        
-       
-       
-        <!-- Modal [responsive menu] -->
-        <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-slideout" role="document">
-                <div class="modal-content full">
-                    <div class="modal-header" data-dismiss="modal">
-                        <i class="icon-close fas fa-arrow-right"></i>
-                    </div>
-                    <div class="menu modal-body">
-                        <div class="row w-100">
-                            <div class="items p-0 col-12 text-center">
-                                <!-- Append [navbar] -->
+<!-- Footer -->
+<footer>
+
+    
+    <!-- Copyright -->
+    <section id="copyright" class="p-3 odd copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3 text-center text-lg-left">
+                    <p>Live with water</p>
+                  
+                </div>
+                <div class="col-12 col-md-6 p-3 text-center text-lg-right">
+                    <p>© Alpha Pools</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</footer>
+
+<!-- Modal [search] -->
+<div id="search" class="p-0 modal fade" role="dialog" aria-labelledby="search" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="modal-body">
+                <form class="row">
+                    <div class="col-12 p-0 align-self-center">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <h2>What are you looking for?</h2>
+                                <div class="badges">
+                                    <span class="badge"><a href="#">Owe a pool</a></span>
+                                    <span class="badge"><a href="#">Pool maintenance</a></span>
+                                    <span class="badge"><a href="#">Pool eqipments</a></span>
+                                    <span class="badge"><a href="#">Jacuzzi/Spa</a></span>
+                                    <span class="badge"><a href="#">Sauna</a></span>
+                                    <span class="badge"><a href="#">Steam room</a></span>
+                                    <span class="badge"><a href="#">Landscaping</a></span>
+                                    <span class="badge"><a href="#">Pergolas & gazebos</a></span>
+                                    
+                                </div>
                             </div>
-                            <div class="contacts p-0 col-12 text-center">
-                                <!-- Append [navbar] -->
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 input-group">
+                                <input type="text" class="form-control" placeholder="Enter Keywords">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 p-0 input-group align-self-center">
+                                <button class="btn primary-button">SEARCH</button>
                             </div>
                         </div>
                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal [map] -->
+<div id="map" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header absolute" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="modal-body p-0">
+                <iframe src="https://maps.google.com/maps?q=PB%20No.%203417,%20PC%20111,%20CPO%20Office%20No.23,%202nd%20Floor%20Luxury-3%20Tower%20Near%20Mall%20of%20Muscat,%20Mabela%20Sulatanate%20of%20Oman%20OM,%20111&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="map1" class="p-0 modal fade" role="dialog" aria-labelledby="map" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header absolute" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="modal-body p-0">
+                <iframe src="https://maps.google.com/maps?q=%20Barka,%20Sanayya&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal [responsive menu] -->
+<div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content full">
+            <div class="modal-header" data-dismiss="modal">
+                <i class="icon-close fas fa-arrow-right"></i>
+            </div>
+            <div class="menu modal-body">
+                <div class="row w-100">
+                    <div class="items p-0 col-12 text-center">
+                        <!-- Append [navbar] -->
+                    </div>
+                    <div class="contacts p-0 col-12 text-center">
+                        <!-- Append [navbar] -->
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <!-- Scroll [to top] -->
-        <div id="scroll-to-top" class="scroll-to-top">
-            <a href="#header" class="smooth-anchor">
-                <i class="fas fa-arrow-up"></i>
-            </a>
-        </div>        
-      
+<!-- Scroll [to top] -->
+<div id="scroll-to-top" class="scroll-to-top">
+    <a href="#header" class="smooth-anchor">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>        
 
 
 
 
-        <script>
-            var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36525';
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = url;
-            var options = {
-          "enabled":true,
-          "chatButtonSetting":{
-              "backgroundColor":"#058283",
-              "ctaText":"",
-              "borderRadius":"40",
-              "marginLeft":"0",
-              "marginBottom":"80",
-              "marginRight":"80",
-              "position":"right"
-          },
-          "brandSetting":{
-              "brandName":"Alpha Pools",
-              "brandSubTitle":"Typically replies within a hour",
-              "brandImg":"assets/images/Alpha-Pools-Logo-final.png",
-              "welcomeText":"Hi there!\nHow can I help you?",
-              "messageText":"",
-              "backgroundColor":"#058283",
-              "ctaText":"Start Chat",
-              "borderRadius":"25",
-              "autoShow":false,
-              "phoneNumber":"+96897839855"
-          }
-          };
-            s.onload = function() {
-                CreateWhatsappChatWidget(options);
-            };
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-          </script>
-        <!-- ==============================================
-        Google reCAPTCHA // Put your site key here
-        =============================================== -->
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
 
-        <!-- ==============================================
-        Vendor Scripts
-        =============================================== -->
-        <script src="assets/js/vendor/jquery.min.js"></script>
-        <script src="assets/js/vendor/jquery.easing.min.js"></script>
-        <script src="assets/js/vendor/jquery.inview.min.js"></script>
-        <script src="assets/js/vendor/popper.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/ponyfill.min.js"></script>
-        <script src="assets/js/vendor/slider.min.js"></script>
-        <script src="assets/js/vendor/animation.min.js"></script>
-        <script src="assets/js/vendor/progress-radial.min.js"></script>
-        <script src="assets/js/vendor/bricklayer.min.js"></script>
-        <script src="assets/js/vendor/gallery.min.js"></script>
-        <script src="assets/js/vendor/shuffle.min.js"></script>
-        <script src="assets/js/vendor/cookie-notice.min.js"></script>
-        <script src="assets/js/vendor/particles.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36525';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#058283",
+      "ctaText":"",
+      "borderRadius":"40",
+      "marginLeft":"0",
+      "marginBottom":"80",
+      "marginRight":"80",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Alpha Pools",
+      "brandSubTitle":"Typically replies within a hour",
+      "brandImg":"assets/images/Alpha-Pools-Logo-final.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"",
+      "backgroundColor":"#058283",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"+96897839855"
+  }
+  };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
+
+<script>
+$("#submit-form").submit((e)=>{
+e.preventDefault()
+$.ajax({
+    url:"https://script.google.com/macros/s/AKfycbxj6TIy2TfS-77kbGBNOWNaLn1ogMCeY19U1fN7zE3myetRr-qaDJgwBZxJGF0hcx-b/exec",
+    data:$("#submit-form").serialize(),
+    method:"post",
+    success:function (response){
+        alert("Form submitted successfully")
+        window.location.reload()
+        //window.location.href="https://google.com"
+    },
+    error:function (err){
+        alert("Something Error")
+
+    }
+})
+})
+</script>
+
+<!-- ==============================================
+Google reCAPTCHA // Put your site key here
+=============================================== -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
+
+<!-- ==============================================
+Vendor Scripts
+=============================================== -->
+<script src="assets/js/vendor/jquery.min.js"></script>
+<script src="assets/js/vendor/jquery.easing.min.js"></script>
+<script src="assets/js/vendor/jquery.inview.min.js"></script>
+<script src="assets/js/vendor/popper.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/ponyfill.min.js"></script>
+<script src="assets/js/vendor/slider.min.js"></script>
+<script src="assets/js/vendor/animation.min.js"></script>
+<script src="assets/js/vendor/progress-radial.min.js"></script>
+<script src="assets/js/vendor/bricklayer.min.js"></script>
+<script src="assets/js/vendor/gallery.min.js"></script>
+<script src="assets/js/vendor/shuffle.min.js"></script>
+<script src="assets/js/vendor/cookie-notice.min.js"></script>
+<script src="assets/js/vendor/particles.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
 </html>
