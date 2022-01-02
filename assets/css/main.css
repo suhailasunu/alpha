@@ -51,6 +51,38 @@
 #content-mobile {display: block;}
 
 }
+
+
+
+
+
+   /* Child Text Container */
+   .content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+   
+    
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+   }
+   
+   /* Hover on Parent Container */
+   .content_img:hover{
+    cursor: pointer;
+   }
+   
+   .content_img:hover div{
+    
+    padding: 70px 70px;
+    visibility: visible;
+    opacity: 0.7; 
+    font-size:xx-large;
+   }
 /*----------------------------------------------
 1. Reset
 HTML5 display-role reset for older browsers
