@@ -54,6 +54,13 @@
 
 
 
+.hide {
+    display: none;
+  }
+  .map-container {
+    text-align: center;
+  }
+
 
 
    /* Child Text Container */
