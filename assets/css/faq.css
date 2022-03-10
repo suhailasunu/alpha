@@ -1,0 +1,21 @@
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    
+    padding-left: 10px;
+}
+
+
+
+
+
+
